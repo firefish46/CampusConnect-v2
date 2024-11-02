@@ -1,13 +1,20 @@
+@font-face {
+    font-family: armata;
+    src: url(Armata-Regular.ttf);
+  }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: armata;
+        text-overflow: clip;
 }
 
 .container {
     display: flex;
     height: 100vh;
+    text-overflow: clip;
 }
 
 .sidebar {
@@ -20,6 +27,7 @@
     padding-top: 20px;
     position: relative;
     transition: width 0.3s ease;
+    text-overflow: clip;
 }
 
 .sidebar:hover {
@@ -39,6 +47,7 @@
     transition: all 0.3s ease;
     text-align: left;
     opacity: 0.8;
+    text-overflow:ellipsis;
 }
 
 .menu-btn:hover, .found-btn:hover, .lost-btn:hover {
@@ -91,6 +100,27 @@
     border: 1px solid #ddd;
     min-height: 60vh;
 }
+#material_id:hover::after {
+content: "material";
+
+}
+#calender_id:hover::after {
+    content: "callender";
+    
+    }
+
+    #resource_id:hover::after {
+        content: "resource";
+        
+        }
+        #dashboard_id:hover::after {
+            content: "dashboard";
+            
+            }
+            #help_id:hover::after {
+                content: "help";
+                
+                }
 
 /* Animation */
 @keyframes slideIn {
