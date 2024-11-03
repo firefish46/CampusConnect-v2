@@ -9,7 +9,12 @@ const menuData = {
 // Function to display sub-options right below the clicked item
 function showOptions(menuId, button) {
     // Clear any previously displayed submenu
- 
+ const existingSubmenu = button.nextSibling;
+ const isexist = existingSubmenu&&existingSubmenu?.classList?.contains("submenu")
+  if(isexist){
+    closeAllSubmenus()
+    return;
+  }
 
     // Create a submenu element
     const submenu = document.createElement("div");
@@ -20,7 +25,7 @@ function showOptions(menuId, button) {
         const optionButton = document.createElement("button");
         optionButton.innerText = option;
         optionButton.onclick = () => {
-            if (menuId === "courseMenu") {
+            if (menuId === "courseMenu") {    
                 showContent(option);
             } else {
                 // Show next level options based on clicked menu
