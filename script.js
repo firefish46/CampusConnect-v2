@@ -64,5 +64,10 @@ function closeAllSubmenus() {
 function showContent(contentTitle) {
     closeAllSubmenus();
     document.getElementById('page-title').innerText = contentTitle;
-    document.getElementById('content-display').innerHTML = `<p>Showing ${contentTitle}...</p>`;
+    document.getElementById('content-display').innerHTML = `<p>Showing ${contentTitle}... </p> <br> <h3> ops ! </h3>  <p>  nothing found!</p>`;
+}
+function show(contentTitle) {
+    closeAllSubmenus();
+    document.getElementById('page-title').innerText = contentTitle;
+    document.getElementById('content-display').innerHTML = `<p> ${contentTitle} is underdevelopment...</p>`;
 }

@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus Connect</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
    
-       
        <div class="navbar">
         <button onclick="closeAllSubmenus()"class="NBtn">
             <span class="svgContainer">
@@ -25,16 +26,16 @@
         </div>
     
 </div>
-   
+
 
     <div class="container">
         <!-- Sidebar -->
         <div class="sidebar">
             <button onclick="showOptions('departmentMenu', this)" class="menu-btn" id="material_id">🗃️</button>
-            <button class="menu-btn" id="calender_id">📅  </button>
-            <button class="menu-btn" id="resource_id">📚 </button>
-            <button class="menu-btn" id="dashboard_id">💬 </button>
-            <button class="menu-btn" id="help_id">❓ </button>
+            <button onclick="show('Calender')" class="menu-btn" id="calender_id">📅  </button>
+            <button onclick="show('Resourse ')"class="menu-btn" id="resource_id">📚 </button>
+            <button onclick="show('Dashboard')"class="menu-btn" id="dashboard_id">💬 </button>
+            <button onclick="show('Help Info')"class="menu-btn" id="help_id">❓ </button>
             
 
             <!-- Found & Lost Buttons -->
@@ -53,4 +54,22 @@
 
     <script src="script.js"></script>
 </body>
+
+<footer class="footer">
+    <div class="footer-content">
+      <p>© 2024 Campus Connect. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/mh.ethin" target="_blank" class="icon facebook" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://github.com/firefish46" target="_blank" class="icon github" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/mehedi-hasan-582660336" target="_blank" class="icon linkedin" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  
 </html>
