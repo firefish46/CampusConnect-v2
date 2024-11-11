@@ -37,10 +37,10 @@
 .menu-btn, .found-btn, .lost-btn {
     background: linear-gradient(45deg, #4c53af, #4abbc3);
     border: none;
-    color: #fff;
+    color: #fff;    
     font-size: 18px;
     margin: 10px 0;
-    cursor: pointer;
+    cursor: pointer;                                                      
     padding: 10px;
     width: 90%;
     border-radius: 5px;

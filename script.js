@@ -1,7 +1,7 @@
 // Dynamic data for each menu
 const menuData = {
-    departmentMenu: ["Department 1", "Department 2", "Department 3"],
-    intakeMenu: ["Intake 1", "Intake 2"],
+    departmentMenu: ["cse", "EEE", "ENG","LAW"],
+    intakeMenu: ["Intake 45", "Intake 46","Intake 47", "Intake 48","Intake 49", "Intake 50"," Intake51"],
     sectionMenu: ["Section A", "Section B"],
     courseMenu: ["Course 1", "Course 2", "Course 3"]
 };
@@ -15,6 +15,11 @@ function showOptions(menuId, button) {
     closeAllSubmenus()
     return;
   }
+
+
+
+
+
 
     // Create a submenu element
     const submenu = document.createElement("div");
@@ -33,7 +38,7 @@ function showOptions(menuId, button) {
             }
         };
         submenu.appendChild(optionButton);
-    });
+    }); 
 
     // Insert submenu right after the clicked button
     button.parentNode.insertBefore(submenu, button.nextSibling);
